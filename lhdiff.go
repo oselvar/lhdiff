@@ -150,7 +150,6 @@ func Lhdiff(left string, right string, contextSize int, includeIdenticalLines bo
 }
 
 func makeLineMappings(linePairs map[int]LinePair, leftLineCount int, newRightLines []int, includeIdenticalLines bool) [][]uint32 {
-	fmt.Println("linePairs:", len(linePairs))
 	lineMappings := make([][]uint32, 0)
 	for leftLineNumber := 0; leftLineNumber < leftLineCount; leftLineNumber++ {
 		pair, exists := linePairs[leftLineNumber]
