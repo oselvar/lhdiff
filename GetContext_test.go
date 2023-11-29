@@ -18,7 +18,7 @@ func ExampleGetContext_withoutSpecialCharacters() {
 		"9\n",
 	}
 
-	context := GetContext(5, lines, 3)
+	context := getContext(5, lines, 3)
 	fmt.Println(context)
 
 	// Output:
@@ -44,7 +44,7 @@ func ExampleGetContext_withSpacesAndBrackets() {
 		"9\n",
 	}
 
-	context := GetContext(5, lines, 3)
+	context := getContext(5, lines, 3)
 	fmt.Println(context)
 
 	// Output:
